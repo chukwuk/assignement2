@@ -122,7 +122,7 @@ To submit your program, you need to make sure the following files are committed 
   * `gofish.cpp`
   * All of the `.hpp` and `.cpp` files containing the interface and implementation of your classes.
   * `Makefile`
-Do not commit any other files (other than the ones that were already in your repository at the start of the assignment).  A good way to check whether your assignment is submitted is to simply look at your repo on GitHub (i.e. https://github.com/OSU-CS162-W18/assignment-2-YourGitHubUsername).  If your files appear there before the deadline, they they are submitted.
+Do not commit any other files (other than the ones that were already in your repository at the start of the assignment).  A good way to check whether your assignment is submitted is to simply look at your repo on GitHub (i.e. https://github.com/OSU-CS162-W19/assignment-2-YourGitHubUsername).  If your files appear there before the deadline, they they are submitted.
 
 ## Grading criteria
 
