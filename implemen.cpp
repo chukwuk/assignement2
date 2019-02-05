@@ -1,3 +1,11 @@
+/****************************************
+*************** Program:implemen.cpp
+**************** Author:Kingsley C. Chukwu
+************** Date: 2/4/2019
+************** Description:contains all the function need to check error, output the rank and suit that corresponds to a particular integer
+*************** Input: integers
+************* Output: outputs strings
+**************************************************/
 
 
 

@@ -1,3 +1,15 @@
+/****************************************
+**************** Program:implemen.cpp
+***************** Author:Kingsley C. Chukwu
+*************** Date: 2/4/2019
+*************** Description:contains all the function need to check error, output the rank and suit that corresponds to a particular integ
+ * er
+**************** Input: integers
+************** Output: outputs strings
+***************************************************/
+
+
+
 #ifndef IMPLEMEN_H
 #define IMPLEMEN_H
 
