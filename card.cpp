@@ -38,10 +38,26 @@ void Card::set_values (int x, int y) {
     this->suit = x;
 }
 
+/******************************************************
+ *************************** Function:print_student
+ ************************** Description:print the rank and suit
+ *************************** Parameters:none
+ **************************** Pre-Conditions:none
+ ************************** Post-Conditions: print the rank and suit of a card
+ ******************************************************************************/
+
 void Card::print_student() {
     cout <<"The rank is "<<this->rank<<endl;
     cout<<"The suit is "<<this->suit<<endl;
 }
+
+/******************************************************
+ **************************** Function:operator
+ ************************** Description:copy the card
+ **************************** Parameters:none
+ ***************************** Pre-Conditions:none
+ *************************** Post-Conditions: copys the card
+ *******************************************************************************/
 
 
 void Card::operator=(const Card& rhs) {

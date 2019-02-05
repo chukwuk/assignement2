@@ -25,6 +25,12 @@
 
 using namespace std;
 
+/******************************************************
+ ***************** Structure:Declaration of the Card class
+ ***************** Function:stores the properties of the Card and allow you to access the card
+ *******************************************************************/
+
+
 class Card {
     int rank;
     int suit;
