@@ -1,3 +1,11 @@
+/****************************************
+********* Program:gofish.cpp
+********** Author:Kingsley C. Chukwu
+******** Date: 2/4/2019
+******** Description:combines all the various cpp files containing classes to build the game.
+********* Input: string
+******* Output: The winner of the game
+********************************************/
 
 #include <iostream>
 #include <string>
@@ -43,7 +51,7 @@ int main () {
      }
      r_ww++; 
     play.game_player_print_card(0);
-    enter_rank = check_err();
+    enter_rank = check_err(); /*function to check input error*/
     } while (INT_MIN == play.game_player_check_for_rank(enter_rank, 0));
     if (INT_MIN == play.game_player_check_for_rank(enter_rank, 1)) {
           if (0!= play.game_get_n_cards()) {
@@ -72,6 +80,7 @@ int main () {
     if (13 == play.check_game_end()) { break; }     
     } while (got_rank == 1);      
     cout<<" "<<endl; cout <<"This computer is about play now"<<endl; cout<<" "<<endl;
+    /*where the computer starts to play using random number*/
     Card c_temp; int c_enter_rank; int c_num_choos; int c_got_rank = 0; Card c_tempo; int c_num_books_1; int c_num_books_2;
     do {
     c_got_rank = 0;
@@ -117,7 +126,8 @@ int main () {
     if (13 == play.check_game_end()) { break; }
     } while (c_got_rank == 1);
     }
-    int winner = play.check_game_winner();
+    /*where the game ends*/
+    int winner = play.check_game_winner();       /*The winner is decided here*/
     if (winner == 0) {
        int nn_books = play.game_return_nbooks(0);
        cout <<"You win the game with "<<nn_books<<" books"<<endl;
