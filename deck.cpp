@@ -21,6 +21,13 @@
 
 using namespace std;
 
+/******************************************************
+ ****************************** Function:initial
+ ***************************** Description:initial an array of 52 cards
+ ***************************** Parameters: none 
+ ****************************** Pre-Conditions: none
+ ****************************** Post-Conditions: initializes an 52 array of cards
+ ********************************************************************************/
 
 void Deck::initial () {
     this->n_cards = 0;
@@ -32,6 +39,14 @@ void Deck::initial () {
     }
 }
 
+/******************************************************
+ ****************************** Function:shuffle
+ ***************************** Description:shuffles the card using a random
+ ***************************** Parameters: none
+ ****************************** Pre-Conditions: none
+ ****************************** Post-Conditions: none
+ ********************************************************************************/
+
 void Deck::shuffle() {
     srand(time(0));
     for (int i = 0; i<n_cards; i++) {
@@ -40,6 +55,13 @@ void Deck::shuffle() {
     }
 }
 
+/******************************************************
+ ****************************** Function:card_rank
+ ***************************** Description:return a rank string corresponding to a number
+ ***************************** Parameters: integer
+ ****************************** Pre-Conditions: integer
+ ****************************** Post-Conditions: return a string that corresponds to a rank
+ ********************************************************************************/
 
 void Deck::minus_cards(int numb) {
      for (int i = 0; i<n_cards; i++) {
@@ -51,10 +73,25 @@ void Deck::minus_cards(int numb) {
 
 }
 
+/******************************************************
+ ****************************** Function:return_card
+ ***************************** Description:return a card corresponding to an array
+ ***************************** Parameters: integer
+ ****************************** Pre-Conditions: integer
+ ****************************** Post-Conditions: return a card corresponding to an array
+ ********************************************************************************/
+
 Card Deck::return_card(int n_card) {
          return this->cards[n_card];
 }
 
+/******************************************************
+ ***************************** Function:print_deck
+ **************************** Description:print the rank and suit of a card
+ ***************************** Parameters: none
+ ***************************** Pre-Conditions: none
+ ****************************** Post-Conditions: outputs the rank
+ ********************************************************************************/
 
 
 void Deck::print_deck() {

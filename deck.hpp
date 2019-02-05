@@ -25,6 +25,11 @@
 
 using namespace std;
 
+/******************************************************
+ ****************** Structure:Declaration of the Deck
+ ****************** Function:stores the properties of the Deck and keeps track of cards on the deck and number of cards on the deck
+ ********************************************************************/
+
 
 class Deck {
   private:
