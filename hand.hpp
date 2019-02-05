@@ -27,6 +27,10 @@
 
 using namespace std;
 
+/******************************************************
+ ****************** Structure:Declaration of the Hand
+ ******************* Function:stores the properties of the Hand and keeps track of cards on the hand and number of cards on the hand
+ *********************************************************************/
 
 
 class Hand {

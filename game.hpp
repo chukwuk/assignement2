@@ -30,6 +30,12 @@
 
 using namespace std;
 
+/******************************************************
+ ******************* Structure:Declaration of the Game
+ ******************* Function:stores the properties of the Game and keeps track of the number of books and when the game ends
+ *********************************************************************/
+
+
 class Game {
   private:
     Deck deck_card;

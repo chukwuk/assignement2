@@ -27,6 +27,10 @@
 using namespace std;
 
 
+/******************************************************
+ ******************** Structure:Declaration of the Player
+ ******************** Function:stores the properties of the player and keeps track of the number of book for a player
+ **********************************************************************/
 
 
 class Player {
