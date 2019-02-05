@@ -25,6 +25,13 @@
 
 
 
+/******************************************************
+ ******************************* Function:initial
+ ****************************** Description:initial an array of 52 cards for two players
+ ****************************** Parameters: none
+ ******************************* Pre-Conditions: none
+ ******************************* Post-Conditions: initializes an 52 array of cards for two players
+ *********************************************************************************/
 
 
 void  Game::initial()   {

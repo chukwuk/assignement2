@@ -24,6 +24,13 @@
 using namespace std;
 
 
+/*****************************************************
+ ******************************** Function:Player
+ ****************************** Description:assign a pointer to store an array of 52 cards
+ ******************************* Parameters: none
+ ******************************** Pre-Conditions: none
+ ******************************** Post-Conditions: assigns a pointer to store an array of 52 cards
+ ***********************************************************************************/
 
 
 
@@ -32,6 +39,14 @@ using namespace std;
 Player::Player() : n_cards_b(0), n_books(0)  {
      this->books = new Card[52];
 }
+
+/*****************************************************
+ ********************************* Function:add_book
+ ******************************* Description:add one to the number of book for a book
+ ******************************** Parameters: none
+ ********************************* Pre-Conditions: none
+ ********************************* Post-Conditions: increase the number of book by one
+ * ***********************************************************************************/
 
 void Player::add_book() {
      this->n_books++;

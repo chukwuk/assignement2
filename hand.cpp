@@ -23,6 +23,16 @@
 
 using namespace std;
 
+/******************************************************
+ ******************************** Function:Hand
+ ****************************** Description:assign a pointer to store an array of 52 cards
+ ******************************* Parameters: none
+ ******************************** Pre-Conditions: none
+ * ******************************* Post-Conditions: assigns a pointer to store an array of 52 cards
+ **********************************************************************************/
+
+
+
 Hand::Hand() :  n_cards(0) {
   std::cout << "== Default Hand constructor called." << std::endl;
   this->cards = new Card [52];
