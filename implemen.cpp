@@ -25,6 +25,15 @@
 
 using namespace std;
 
+/******************************************************
+ ***************************** Function:card_rank
+ **************************** Description:return a rank string corresponding to a number
+ **************************** Parameters: integer
+ ***************************** Pre-Conditions: integer
+ ***************************** Post-Conditions: return a string that corresponds to a rank
+ *******************************************************************************/
+
+
 string card_rank(int num)  {
     if (num == 0) { return "Ace"; } 
     if (num == 1) {return "2"; } 
@@ -40,6 +49,14 @@ string card_rank(int num)  {
     if (num == 11) { return "Queen"; }
     if (num == 12) { return "King"; }
 }
+
+/******************************************************
+ **************************** Function:card_suit
+ **************************** Description:return a suit string corresponding to a number
+ *************************** Parameters: integer
+ **************************** Pre-Conditions: integer
+ **************************** Post-Conditions: return a string
+  ******************************************************************************/
 
 
 string card_suit(int num) {
@@ -68,6 +85,15 @@ string card_suit(int num) {
     return num_input;
 } */
 
+/******************************************************
+ *************************** Function:data_to_explore
+ *************************** Description:prints out the number needed to access a rank
+ *************************** Parameters: none
+ *************************** Pre-Conditions: none
+ *************************** Post-Conditions: none
+ ******************************************************************************/
+
+
 void data_to_explore() {
    cout <<" "<<endl; cout<<"Enter between 0-12 to choose a rank"<<endl; cout <<" "<<endl;
    cout <<"Enter (0) for rank of Ace"<<endl; cout <<" "<<endl;
@@ -84,6 +110,15 @@ void data_to_explore() {
    cout <<"Enter (11) for rank of Queen"<<endl; cout <<" "<<endl;
    cout <<"Enter (12) for rank of King"<<endl; cout <<" "<<endl;
 }
+
+/******************************************************
+ ************************** Function:check_err
+ ************************** Description:checks for input errors
+ ************************** Parameters: none
+ *************************** Pre-Conditions: none
+ ************************** Post-Conditions: returns the input
+ *****************************************************************************/
+
 
 int check_err() {
    int r_w = 0; string uzo; int num_input;

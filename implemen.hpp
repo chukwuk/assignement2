@@ -28,11 +28,50 @@
 
 using namespace std;
 
+/******************************************************
+ ****************************** Function:card_rank
+ ***************************** Description:return a rank string corresponding to a number
+ ***************************** Parameters: integer
+ ****************************** Pre-Conditions: integer
+ ****************************** Post-Conditions: return a string that corresponds to a rank
+ ********************************************************************************/
+
+
 string card_rank(int num);
+
+
+/*****************************************************
+ **************************** Function:card_suit
+ **************************** Description:return a suit string corresponding to a number
+ *************************** Parameters: integer
+ **************************** Pre-Conditions: integer
+ **************************** Post-Conditions: return a string
+ ******************************************************************************/
+
 
 string card_suit(int num);
 
+
+/******************************************************
+ **************************** Function:data_to_explore
+ **************************** Description:prints out the number needed to access a rank
+ **************************** Parameters: none
+ **************************** Pre-Conditions: none
+ **************************** Post-Conditions: none
+ *******************************************************************************/
+
+
 void data_to_explore();
+
+
+
+/******************************************************
+ *************************** Function:check_err
+ *************************** Description:checks for input errors
+ *************************** Parameters: none
+ **************************** Pre-Conditions: none
+ *************************** Post-Conditions: returns the input
+ ******************************************************************************/
 
 int check_err();
 
