@@ -1,3 +1,14 @@
+/****************************************
+************** Program:hand.hpp
+*************** Author:Kingsley C. Chukwu
+************* Date: 2/4/2019
+************* Description:contains all the function needed to the number of cards in a hand; it also modifies the cards in the hand. it takes and remove cards from a hand
+************** Input: integers
+************ Output: number of cards, number of cards that have a particular rank,
+*************************************************/
+
+
+
 #ifndef HAND_H
 #define HAND_H 
 
