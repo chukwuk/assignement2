@@ -1,3 +1,14 @@
+/****************************************
+************** Program:game.cpp
+*************** Author:Kingsley C. Chukwu
+************* Date: 2/4/2019
+************* Description:contains all the function needed to the number of cards in a hand in a particular player; it also modifies the cards in the hand. it also keep track of the total number of books and which player wins the game.
+************** Input: integers
+************ Output: returns the winner of the game between two players
+*************************************************/
+
+
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
