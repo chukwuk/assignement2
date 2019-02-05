@@ -1,3 +1,13 @@
+/****************************************
+************ Program:deck.cpp
+************* Author:Kingsley C. Chukwu
+*********** Date: 2/4/2019
+*********** Description:contains all the function needed to access and create a deck of cards. it also shuffles the card and returns the number of on the deck. it also removes cards from the deck
+************ Input: integers
+********** Output: number of cards
+***********************************************/
+
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
