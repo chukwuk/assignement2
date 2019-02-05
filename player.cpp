@@ -1,3 +1,11 @@
+/****************************************
+************ Program:player.cpp
+************* Author:Kingsley C. Chukwu
+*********** Date: 2/4/2019
+*********** Description:contains all the function needed to the number of cards in the player's hand; the number of books the player has,it also modifies the cards in the player's hand by using function from the hand.hpp file
+************ Input: integers
+********** Output: number of books, number of cards 
+***********************************************/
 
 
 
