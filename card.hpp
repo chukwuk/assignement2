@@ -1,3 +1,13 @@
+/****************************************
+*********** Program:card.hpp
+************ Author:Kingsley C. Chukwu
+********** Date: 2/4/2019
+********** Description:contains all the function needed to access the properties of a card.
+*********** Input: integers
+********* Output: rank and suits of the card
+**********************************************/
+
+
 #ifndef  CARD_H
 #define CARD_H
 
