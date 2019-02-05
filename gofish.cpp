@@ -21,27 +21,27 @@ int main () {
     
     Game play;
     play.initial();
-    play.game_player_print_card(0);
-    play.game_player_print_card(1);
+    /* play.game_player_print_card(0);
+    play.game_player_print_card(1); */
     while (13!=play.check_game_end()) {
     do {
-    got_rank = 0; int r_w = 0;
+    got_rank = 0; int r_ww = 0;
     do  {       
     if (0==play.game_player_numb_card(0)) {
        if (0!= play.game_get_n_cards()) {    
         int n_cards = play.game_get_n_cards();
-        cout << n_cards << endl;
+      /*  cout << n_cards << endl; */
         int rand_card = rand() % n_cards;
         temp = play.game_return_card (rand_card);
         play.game_minus_cards(rand_card);
         play.game_player_add_cards(temp,  0);
       }
      }
-     if (r_w > 0) {
+     if (r_ww > 0) {
         cout <<" "<<endl;
         cout <<"You dont have the rank you requested from the other player"<<endl; cout<<" "<<endl;
      }
-     r_w++; 
+     r_ww++; 
     play.game_player_print_card(0);
     enter_rank = check_err();
     } while (INT_MIN == play.game_player_check_for_rank(enter_rank, 0));
@@ -71,7 +71,7 @@ int main () {
     cout << "The computer has "<<num_books_2<<" books and you have "<<num_books_1<<" books"<<endl; cout <<" "<<endl;
     if (13 == play.check_game_end()) { break; }     
     } while (got_rank == 1);      
-    cout <<"This computer is about play now"<<endl;
+    cout<<" "<<endl; cout <<"This computer is about play now"<<endl; cout<<" "<<endl;
     Card c_temp; int c_enter_rank; int c_num_choos; int c_got_rank = 0; Card c_tempo; int c_num_books_1; int c_num_books_2;
     do {
     c_got_rank = 0;
@@ -86,12 +86,14 @@ int main () {
         play.game_player_add_cards(c_temp,  1);
       }
      }
+   /*  cin >> c_enter_rank; */
     c_enter_rank = rand() % 13;
     } while (INT_MIN == play.game_player_check_for_rank(c_enter_rank, 1));
+     play.game_player_print_card(0);
     if (INT_MIN == play.game_player_check_for_rank(c_enter_rank, 0)) {
           if (0!= play.game_get_n_cards()) {
              int n_cards = play.game_get_n_cards();
-             cout << n_cards << endl;
+        /*     cout << n_cards << endl; */
              int rand_card = rand() % n_cards;
              c_tempo = play.game_return_card (rand_card);
              if (c_enter_rank == c_tempo.get_rank()) { c_got_rank = 1;   }
@@ -115,10 +117,20 @@ int main () {
     if (13 == play.check_game_end()) { break; }
     } while (c_got_rank == 1);
     }
+    int winner = play.check_game_winner();
+    if (winner == 0) {
+       int nn_books = play.game_return_nbooks(0);
+       cout <<"You win the game with "<<nn_books<<" books"<<endl;
+    }  else if (winner==1) {
+       int nn_books = play.game_return_nbooks(1);
+       cout <<"The computer wins the game with "<<nn_books<<" books"<<endl;
+    }
 
-    int n_cards = play.game_get_n_cards();
+    return 0; 
+
+/*    int n_cards = play.game_get_n_cards();
     cout << n_cards << endl;
     play.game_player_print_card(0);
-    play.game_player_print_card(1);
+    play.game_player_print_card(1); */
 
 }

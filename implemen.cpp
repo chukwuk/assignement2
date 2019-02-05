@@ -1,5 +1,4 @@
-#ifndef IMPLEMEN_H
-#define IMPLEMEN_H
+
 
 
 
@@ -80,7 +79,7 @@ void data_to_explore() {
 
 int check_err() {
    int r_w = 0; string uzo; int num_input;
- do {
+   do {
        if (r_w > 0) {
           cout << " " << endl;
           cout << "Oops!, Invalid Input, Please enter a valid input"<<endl;
@@ -96,5 +95,5 @@ int check_err() {
 
 
 
-#endif
+
 
