@@ -51,6 +51,7 @@ int main () {
      }
      r_ww++; 
     play.game_player_print_card(0);
+    if (13 == play.check_game_end()) { break; }
     enter_rank = check_err(); /*function to check input error*/
     } while (INT_MIN == play.game_player_check_for_rank(enter_rank, 0));
     if (INT_MIN == play.game_player_check_for_rank(enter_rank, 1)) {
@@ -72,7 +73,7 @@ int main () {
     if (INT_MAX!=play.game_player_numb_of_rank_book(0)) { 
        int num_ran = play.game_player_numb_of_rank_book(0);
        Card* tempor = play.game_player_substract_cards_books(num_ran, 0); 
-       play.game_add_cards_array_books(tempor, num_ran, 0);
+       play.game_add_cards_array_books(tempor, 4, 0);
        play.game_add_book(0);                                            
     }     
     num_books_1 = play.game_return_nbooks(0);    num_books_2 = play.game_return_nbooks(1);
@@ -96,6 +97,7 @@ int main () {
       }
      }
    /*  cin >> c_enter_rank; */
+    if (13 == play.check_game_end()) { break; }
     c_enter_rank = rand() % 13;
     } while (INT_MIN == play.game_player_check_for_rank(c_enter_rank, 1));
      play.game_player_print_card(0);
@@ -118,7 +120,7 @@ int main () {
     if (INT_MAX!=play.game_player_numb_of_rank_book(1)) {
        int num_ran = play.game_player_numb_of_rank_book(1);
        Card* tempor = play.game_player_substract_cards_books(num_ran, 1);
-       play.game_add_cards_array_books(tempor, num_ran, 1);
+       play.game_add_cards_array_books(tempor, 4, 1);
        play.game_add_book(1);
     }
     c_num_books_1 = play.game_return_nbooks(0);    c_num_books_2 = play.game_return_nbooks(1);
